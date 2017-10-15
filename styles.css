@@ -43,3 +43,7 @@ body {
  .link:hover{
       opacity: 0.6;
   }
+
+  #projects-title {
+      margin-top: -70px;
+  }
