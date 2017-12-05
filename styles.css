@@ -1,9 +1,25 @@
 body {
     min-height: 100vh;
  color: white;
+
+}
+html {
+    overflow: hidden;
+    height: 100%;
 }
 
-#main-column {
+body {
+    height: 100%;
+    overflow: auto;
+}
+
+.navigation {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.main-column {
     height: 100%;
 }
 #background {
@@ -47,3 +63,18 @@ body {
   #projects-title {
       margin-top: -70px;
   }
+
+  .info {
+      position: absolute;
+      z-index: 1;
+      color: black;
+      background-color: white;
+  
+      border-radius: 10px;
+      border: solid 5px skyblue;
+      max-width: 300px;
+  }
+
+
+ 
+ 

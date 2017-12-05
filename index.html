@@ -5,83 +5,208 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Brendt Bly</title>
+    <!-- jquery -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- bulma -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendor/bulma.css">
     <link rel="stylesheet" href="vendor/bulma.css.map">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- scripts -->
     <script src="client.js"></script>
 </head>
 
 <body>
     <div id="background"></div>
 
-<div>
-    <div class="level title-padding is-transparent">
-        <div class="navbar-start">
-            <p class="navbar-item is-size-6 heading has-text-white">Brendt Bly</p>
-        </div>
-
-        <div class="navbar-end">
-            <div class="navbar-item">
-                <a href="https://github.com/b-bly" target="_blank">
-                    <i class="fa fa-lg fa-github has-text-white"></i>
-                </a>
+    <div>
+        <div class="level title-padding is-transparent navigation">
+            <div class="navbar-start">
+                <p class="navbar-item is-size-6 heading has-text-white">Brendt Bly</p>
             </div>
-            <div class="navbar-item">
-                <a href="https://linkedin.com/in/brendtbly" target="_blank">
-                    <i class="fa fa-lg fa-linkedin has-text-white"></i>
-                </a>
-            </div>
-            <div class="navbar-item">
-                <a href="https://twitter.com/brendt_bly" target="_blank">
-                    <i class="fa fa-lg fa-twitter has-text-white"></i>
-                </a>
-            </div>
-        </div>
-    </div>
 
-    <div style="height: 10vh"> </div>
-
-    <div class="level center content column">
-        <p class="is-size-2 content title-padding has-text-centered"><strong class="has-text-white">Welcome to my portfolio site.</strong></p>
-            <br> <p class="is-size-4 content content has-text-centered" id="projects-title"> Here are some of my projects:</p>
-    </div>
-
-    <div class="level center content" id="main-column">
-        <div class="level-item has-text-centered">
-            <div>
-
-            </div>
-        </div>
-        <div class="level-item has-text-centered">
-            <div>
-                <div class="circle-crop">
-                    <a href="https://belwin-citizen-science.herokuapp.com/" target="_blank">
-                        <img class="link" src="images/belwin.png" />
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a href="https://github.com/b-bly" target="_blank">
+                        <i class="fa fa-lg fa-github has-text-white"></i>
                     </a>
                 </div>
-                <p class="is-size-7 heading">Belwin Citizen Science</p>
-
-            </div>
-        </div>
-        <div class="level-item has-text-centered">
-            <div>
-                <div class="circle-crop">
-                    <a href="https://piratestorytime.herokuapp.com" target="_blank">
-                        <img class="link" src="images/pirate-story-square.png" />
+                <div class="navbar-item">
+                    <a href="https://linkedin.com/in/brendtbly" target="_blank">
+                        <i class="fa fa-lg fa-linkedin has-text-white"></i>
                     </a>
                 </div>
-                <p class="is-size-7 heading">Pirate Storytime</p>
-
+                <div class="navbar-item">
+                    <a href="https://twitter.com/brendt_bly" target="_blank">
+                        <i class="fa fa-lg fa-twitter has-text-white"></i>
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a href="https://medium.com/@brendt_bly" target="_blank">
+                        <p style="color: white">
+                            <strong>Blog</strong>
+                        </p>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="level-item has-text-centered">
-            <div>
+
+        <div style="height: 10vh"> </div>
+
+        <div class="level center content column">
+            <p class="is-size-2 content title-padding has-text-centered">
+                <strong class="has-text-white">Welcome to my portfolio site.</strong>
+            </p>
+            <br>
+            <p class="is-size-4 content content has-text-centered" id="projects-title"> Here are some of my projects:</p>
+        </div>
+
+        <div class="level center content main-column">
+            <div class="level-item has-text-centered">
+                <div>
+
+                </div>
+            </div>
+            <!-- BELWIN -->
+            <div class="level-item has-text-centered portfolio">
+                <div class="item">
+                    <div class="circle-crop">
+                        <a href="https://belwin-citizen-science.herokuapp.com/" target="_blank">
+                            <img class="link" src="images/belwin.png" />
+                        </a>
+                    </div>
+
+                    <p class="is-size-7 heading">Belwin Citizen Science</p>
+                    <!-- slide in info -->
+
+                    <div class="card info">
+                        <div class="card-content">
+                            <div class="content has-text-left">
+                                I teamed up with some friends to make this app for students and teachers to do research at the Belwin Conservation Center.
+                                This app was made with AngularJS, Express, Node.js, PosgreSQL and Angular Material.
+    
+                                <br>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://belwin-citizen-science.herokuapp.com/" class="card-footer-item" target="_blank">View site</a>
+                            <a href="https://github.com/belwin-outdoor-science/belwin-citizen-science-app" target="_blank" class="card-footer-item">Code on Github</a>
+                        </footer>
+                    </div>
+
+                </div>
+            </div>
+            <!-- PIRATE STORYTIME -->
+            <div class="level-item has-text-centered portfolio">
+                <div class="item">
+                    <div class="circle-crop">
+                        <a href="https://piratestorytime.herokuapp.com" target="_blank">
+                            <img class="link" src="images/pirate-story-square.png" />
+                        </a>
+                    </div>
+                    <p class="is-size-7 heading">Pirate Storytime</p>
+                    <!-- card info -->
+                    <div class="card info">
+                        <div class="card-content">
+                            <div class="content has-text-left">
+Who doesn't like a good pirate story?  Making up a story for kids on the spot is hard.  
+The app pulls random story ideas from a database, which a user can creatively incorporate into a story.
+Made with the MEAN stack.                              
+                                <br>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://piratestorytime.herokuapp.com" class="card-footer-item" target="_blank">View site</a>
+                            <a href="https://github.com/b-bly/pirate-story-time" class="card-footer-item" target="_blank">Code on Github</a>
+                        </footer>
+                    </div>
+                    <!-- card info end -->
+                </div>
 
             </div>
+            <!-- filler -->
+            <div class="level-item has-text-centered">
+                    <div>
+    
+                    </div>
+                </div>
         </div>
+
+
+        <div class="level center content main-column">
+            <!-- filler -->
+            <div class="level-item has-text-centered">
+                <div>
+
+                </div>
+            </div>
+            <!-- REAL ESTATE -->
+            <div class="level-item has-text-centered portfolio">
+                <div class="item">
+                    <div class="circle-crop">
+                        <a href="https://real-estate-app-me.herokuapp.com/" target="_blank">
+                            <img class="link" src="images/real-estate.png" />
+                        </a>
+                    </div>
+                    <p class="is-size-7 heading">Real Estate Properties</p>
+                    <!-- card info -->
+                    <div class="card info">
+                        <div class="card-content">
+                            <div class="content has-text-left">
+                                This app allows a user to search through real estate properties.
+                                Properties can be edited.  Made with the SEAN stack.
+                                <br>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://real-estate-app-me.herokuapp.com" target="_blank" class="card-footer-item">View site</a>
+                            <a href="https://github.com/b-bly/real-estate" target="_blank" class="card-footer-item">Code on Github</a>
+                        </footer>
+                    </div>
+                    <!-- card info end -->
+                </div>
+
+            </div>
+
+            <!-- SLIDE PUZZLE -->
+            <div class="level-item has-text-centered portfolio">
+                <div class="item">
+                    <div class="circle-crop">
+                        <a href="https://b-bly.github.io/slide-puzzle/puzzle.html" target="_blank">
+                            <img class="link" src="images/slide-puzzle.png" />
+                        </a>
+                    </div>
+                    <p class="is-size-7 heading">Slide Puzzle</p>
+                    <!-- card info -->
+                    <div class="card info">
+                        <div class="card-content">
+                            <div class="content has-text-left">
+                                Got an hour to kill?  You're welcome in advance.  I made this to practice organizing code into ES6 classes
+                                and familiarize myself with the HTML 5 canvas.
+                                <br>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://b-bly.github.io/slide-puzzle/puzzle.html" target="_blank" class="card-footer-item">View site</a>
+                            <a href="https://github.com/b-bly/slide-game" target="_blank" class="card-footer-item">Code on Github</a>
+                        </footer>
+                    </div>
+                    <!-- card info end -->
+                </div>
+
+            </div>
+            <!-- filler -->
+            <div class="level-item has-text-centered">
+                    <div>
+    
+                    </div>
+                </div>
+        </div>
+
+
+
     </div>
-</div>
 </body>
 
 </html>
